@@ -1,10 +1,7 @@
 import { Injectable, EventEmitter } from "@angular/core";
 import { AppRepository } from "../repositories/app.repository";
-// const CLIENT_ID = "450773583625-pq80t7pmvoqf24ic16rck2m23i67r55g.apps.googleusercontent.com";
-const CLIENT_ID = "295650181625-ecduou5208vaf1lu76mhvj9q8klirktr.apps.googleusercontent.com";
-const API_KEY = "cixWsdR_YsqyhopK945tLwgf";
-
-// const API_KEY = "AIzaSyApcOBkOcS5lkohsOAZB6QTRi5NqK54o58";
+const CLIENT_ID = "450773583625-pq80t7pmvoqf24ic16rck2m23i67r55g.apps.googleusercontent.com";
+const API_KEY = "AIzaSyApcOBkOcS5lkohsOAZB6QTRi5NqK54o58";
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 var SCOPES = 'https://www.googleapis.com/auth/drive';
 
