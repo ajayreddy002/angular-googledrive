@@ -34,7 +34,9 @@ import { UserRepository } from '../infrastructure/repositories/user.repository';
 import { UserSession } from '../infrastructure/sessions/user.session';
 import { FilesUploadComponent } from './components/filesupload/filesupload.component';
 import { HdMenuComponent } from './components/hdmenu/hdmenu.component';
+import { PDFViewerComponent} from './components/show-file-thumb';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatTableModule, MatBottomSheetModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatToolbarModule, MatProgressSpinnerModule, MatListModule } from '@angular/material';
+import { from } from 'rxjs';
 // import { DialogoneinputComponent } from './components/dialogoneinput/dialogoneinput.component';
 // declare var gapi : any;
 export function initGapi(gapiSession: GapiSession) {
@@ -51,6 +53,7 @@ export function initGapi(gapiSession: GapiSession) {
     FilesUploadComponent,
     HdMenuComponent,
     SignInComponent,
+    PDFViewerComponent
 
 
   

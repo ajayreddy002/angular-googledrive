@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
 
     breadCrumbItems: BreadCrumbItem[] = [];
     dataSource: MatTableDataSource<FileInfo>;
-    displayedColumns: string[] = ["icon", "name", "modifiedTime", "size", "delete"];
+    displayedColumns: string[] = ["icon", "name", "thumb","modifiedTime", "size", "delete"];
     files: FileInfo[] = [];
 
     constructor(
@@ -45,6 +45,7 @@ export class DashboardComponent implements OnInit {
                         this.dataSource.data = this.files;
                         this.appContext.Session.BreadCrumb.navigateTo(file.Id, file.Name);
                         this.breadCrumbItems = this.appContext.Session.BreadCrumb.items;
+
                     });
                 });
         }
@@ -117,6 +118,7 @@ export class DashboardComponent implements OnInit {
         this.appContext.Repository.File.getFiles(fileId)
             .then((res) => {
                 this.zone.run(() => {
+                    debugger;
                     this.files = res;
                     this.dataSource.data = this.files;
                 });

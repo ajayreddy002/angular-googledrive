@@ -13,8 +13,8 @@
         <button mat-menu-item>
           <mat-icon class="icon">cloud_upload</mat-icon>
           Upload files
+          <input (change)="uploadFiles($event)" multiple type="file" />
         </button>
-        <input (change)="uploadFiles($event)" multiple type="file" />
       </span>
   
     </mat-menu>
